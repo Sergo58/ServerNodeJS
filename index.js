@@ -50,7 +50,7 @@ app.post('/sendMessage',async (req, res) => {
 </div>
 `, // html body
     });
-    res.send(req.body)
+    res.send("success")
 })
 
 app.listen(port, () => {
