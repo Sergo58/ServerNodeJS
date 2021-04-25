@@ -13,7 +13,7 @@ let smtp_login=process.env.SMTP_LOGIN||"---"
 let smtp_password=process.env.SMTP_PASSWORD||"---"
 
 
-const port = 3010
+const port = process.env.PORT||3010
 let transporter = nodemailer.createTransport({
     service:"gmail",
     /* host: "smtp.ethereal.email",
